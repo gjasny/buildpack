@@ -168,6 +168,7 @@ ARG IGNORED_TOOLS=powershell,node
 
 # renovate: datasource=github-releases lookupName=git-lfs/git-lfs
 RUN install-tool git-lfs v3.0.2
+RUN git lfs version
 
 # renovate: datasource=github-releases lookupName=PowerShell/PowerShell
 RUN install-tool powershell v7.2.1
